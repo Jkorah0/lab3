@@ -17,6 +17,7 @@ The reversed() method in lab 3 was buggy and did not work in its intended way.
 Failure inducing input: 
 
 `@Test 
+
    public void testReversed2() {
         int[] arr = {1,2,3,4,5};
         int[] reversed = ArrayExamples.reversed(arr);
@@ -26,6 +27,7 @@ Failure inducing input:
 Working input:
 
 ` @Test
+
     public void testReversed(){
         int[] input = { };
         assertEquals(new int[]{ }, ArrayExamples.reversed(input1));
@@ -41,7 +43,8 @@ The working input only worked because the input was empty, meaning that the reve
 
 Reversed() before: 
 
-` static int[] reversed(int[] arr){
+ `static int[] reversed(int[] arr){
+ 
         int[] newArray = new int[arr.length];
         for(int i =0; i<arr.length; i+=1){
             arr[i] = newArray[arr.length-i-1];
@@ -52,6 +55,7 @@ Reversed() before:
 Reversed() after:
 
 `static int[] reversed(int[] arr){
+
         int[] newArray = new int[arr.length];
         for(int i =0; i<arr.length; i+=1){
             newArray[i] = arr[arr.length-i-1];
