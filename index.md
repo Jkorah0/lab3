@@ -17,8 +17,7 @@ The reversed() method in lab 3 was buggy and did not work in its intended way.
 Failure inducing input: 
 
 `@Test 
-
-    public void testReversed2() {
+   public void testReversed2() {
         int[] arr = {1,2,3,4,5};
         int[] reversed = ArrayExamples.reversed(arr);
         aasertArrayEquals(new int[] {5,4,3,2,1}, reversed);
@@ -27,7 +26,6 @@ Failure inducing input:
 Working input:
 
 ` @Test
-
     public void testReversed(){
         int[] input = { };
         assertEquals(new int[]{ }, ArrayExamples.reversed(input1));
